@@ -1,0 +1,9 @@
+#1323. Maximum 69 Number
+class Solution(object):
+    def maximum69Number (self, num):
+        num_str=list(str(num))
+        for i in range(len(num_str)):
+            if num_str[i]=='6':
+                num_str[i]='9'
+                break
+        return int("".join(num_str))
